@@ -1,0 +1,115 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 705px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px;
+}
+
+.container div {
+    position: relative;
+    width: 350px;
+    height: 450px;
+}
+
+.container div form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.326);
+    backdrop-filter: blur(3px);
+    transition: transform 1s;
+    transform: translateY(-450px)
+}
+
+.container div form legend {
+    color: white;
+    font-family: sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container div form input {
+    width: 250px;
+    height: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.326);
+    backdrop-filter: blur(5px);
+    color: rgb(47, 46, 46);
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 3px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.container div form input::placeholder {
+    color: white;
+    text-transform: capitalize;
+}
+
+.container div form .submit {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(93, 133, 11);
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.container div form .submit:hover {
+    background-color: white;
+    color: rgb(93, 133, 11);
+}
+
+.container div form h2 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.796);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.container div form h2 span {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: rgba(64, 64, 63, 0.557);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container div form h2 span:hover {
+    color: black;
+    background-color: white;
+}
+
+.container div .actv {
+    transform: translateY(0px)
+}
